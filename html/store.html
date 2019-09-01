@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>应用商店</title>
+	<link rel="stylesheet" href="../css/public.css">
+	<link rel="stylesheet" href="../css/store.css">
+	<script src="../js/jquery-1.11.1.js"></script>
+	<script>
+		$(function() {
+			$('.b-img li').mouseover(function(event) {
+				$(this).stop().animate({
+					'width': '400px'
+				}, 500).siblings('.b-img li').stop().animate({
+					'width': '140px'
+				}, 500);
+			});
+
+			$('.content .lis li').click(function(event) {
+				$(this).addClass('current').siblings('').removeClass('current');
+			});
+
+			$(window).scroll(function(event) {
+				var h = $(window).scrollTop();
+				if (h > 200) {
+					$('.return').css('display', 'block');
+				} else {
+					$('.return').css('display', '');
+				}
+			})
+
+			$('.return').click(function(event) {
+				$('html,body').animate({
+					scrollTop: 0
+				}, 300);
+			});
+
+		})
+	</script>
+</head>
+
+<body class="bd">
+	<span class="return"></span>
+	<div class="my-body">
+		<div class="bg-logo">
+			<div class="logo">
+				<img src="../images/logo01.png" alt="" width="250">
+			</div>
+			<h2>最好的应用在这里</h2>
+		</div>
+		<div class="banner">
+			<ul class="b-img wrap">
+				<li>
+					<img src="../images/sbanner1.jpg" alt="">
+					<p>微信7.0.0版本</p>
+				</li>
+				<li>
+					<img src="../images/sbanner2.jpg" alt="">
+					<p> QQ8.0.0版本</p>
+				</li>
+				<li>
+					<img src="../images/sbanner6.jpg" alt="">
+					<p>美团5.0.0版本</p>
+				</li>
+				<li>
+					<img src="../images/sbanner3.jpg" alt="">
+					<p>淘宝8.0.0版本</p>
+				</li>
+				<li>
+					<img src="../images/sbanner4.jpg" alt="">
+					<p> 腾讯视频9.0.0</p>
+				</li>
+				<li>
+					<img src="../images/sbanner5.jpg" alt="">
+					<p>WiFi万能钥匙</p>
+				</li>
+			</ul>
+		</div>
+		<div class="content">
+			<ul class="lis wrap">
+				<li><a href="#one">精品推荐</a></li>
+				<li><a href="#two">时下热门</a></li>
+				<li><a href="#three">猜你喜欢</a></li>
+				<li><a href="#four">优秀新软</a></li>
+				<li><a href="#five">游戏应用</a></li>
+			</ul>
+			<div class="wrap">
+				<div id="one" class="row">
+					<h3>精品推荐区</h3>
+					<ul>
+						<li>
+							<div class="box"></div>
+							<img src="../images/weixin.jpg" alt="">
+							<p>微信</p>
+						</li>
+						<li>
+							<div class="box"></div>
+							<img src="../images/qq.jpg" alt="">
+							<p>QQ</p>
+						</li>
+						<li>
+							<div class="box"></div>
+							<img src="../images/wifi.jpg" alt="">
+							<p>WiFi万能钥匙</p>
+						</li>
+						<li>
+							<div class="box"></div>
+							<img src="../images/world.jpg" alt="">
+							<p>我的世界</p>
+						</li>
+					</ul>
+				</div>
+				<div id="two" class="row">
+					<h3>时下热门</h3>
+					<ul>
+						<li>
+							<div class="box"></div>
+							<img src="../images/baidu.jpg" alt="">
+							<p>百度</p>
+						</li>
+						<li>
+							<div class="box"></div>
+							<img src="../images/tx.jpg" alt="">
+							<p>腾讯视频</p>
+						</li>
+						<li>
+							<div class="box"></div>
+							<img src="../images/taobao.jpg" alt="">
+							<p>淘宝</p>
+						</li>
+						<li>
+							<div class="box"></div>
+							<img src="../images/kugou.jpg" alt="">
+							<p>酷狗音乐</p>
+						</li>
+					</ul>
+				</div>
+				<div id="three" class="row">
+					<h3>猜你喜欢</h3>
+					<ul>
+						<li>
+							<div class="box"></div>
+							<img src="../images/love1.jpg" alt="">
+							<p>爱奇艺</p>
+						</li>
+						<li>
+							<div class="box"></div>
+							<img src="../images/love2.jpg" alt="">
+							<p>网易云</p>
+						</li>
+						<li>
+							<div class="box"></div>
+							<img src="../images/love3.jpg" alt="">
+							<p>饿了么外卖</p>
+						</li>
+						<li>
+							<div class="box"></div>
+							<img src="../images/love4.jpg" alt="">
+							<p>高德地图</p>
+						</li>
+					</ul>
+				</div>
+				<div id="four" class="row">
+					<h3>优秀新软</h3>
+					<ul>
+						<li>
+							<div class="box"></div>
+							<img src="../images/sf.jpg" alt="">
+							<p>QQ欢乐</p>
+						</li>
+						<li>
+							<div class="box"></div>
+							<img src="../images/sf1.jpg" alt="">
+							<p>58同城</p>
+						</li>
+						<li>
+							<div class="box"></div>
+							<img src="../images/sf2.jpg" alt="">
+							<p>唯美之游</p>
+						</li>
+						<li>
+							<div class="box"></div>
+							<img src="../images/sf3.jpg" alt="">
+							<p>中国铁路</p>
+						</li>
+					</ul>
+				</div>
+				<div id="five" class="row">
+					<h3>游戏应用</h3>
+					<ul>
+						<li>
+							<div class="box"></div>
+							<img src="../images/game1.jpg" alt="">
+							<p>雄霸天地</p>
+						</li>
+						<li>
+							<div class="box"></div>
+							<img src="../images/game2.jpg" alt="">
+							<p>QQ王者</p>
+						</li>
+						<li>
+							<div class="box"></div>
+							<img src="../images/game3.jpg" alt="">
+							<p>欢乐斗地主</p>
+						</li>
+						<li>
+							<div class="box"></div>
+							<img src="../images/game4.jpg" alt="">
+							<p>水果忍者</p>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+		<nav class="nav">
+			<ul>
+				<li><a href="index.html">首页</a></li>
+				<li><a href="version.html">版本日志</a></li>
+				<li><a href="privilege.html">积分商城</a></li>
+				<li><a href="store.html">应用商店</a></li>
+				<li><a href="#">论坛反馈</a></li>
+			</ul>
+		</nav>
+	</div>
+</body>
+
+</html>

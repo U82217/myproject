@@ -1,0 +1,161 @@
+.login-content button {
+  background-color: #ff5f19;
+}
+
+.login-content span {
+  color: #ff5f19;
+}
+
+.get-score, .detail {
+  background-color: #fff;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.img {
+  float: left;
+  width: 20px;
+  height: 19px;
+  margin-right: 10px;
+  background-image: url('../images/sprite1.png');
+}
+
+.get-score .dot {
+  background-position: -253px -2117px;
+}
+
+.detail .del {
+  background-position: -253px -2181px;
+}
+
+.get-score .head-txt {
+  margin: 30px 30px 0px;
+  position: relative;
+  width: 170px;
+}
+
+.get-score .head-txt .p-one {
+  position: absolute;
+  top: 1px;
+}
+
+.get-score .head-txt img {
+  float: right;
+}
+
+.get-score ul li {
+  float: left;
+  margin: 20px 60px;
+}
+
+.circle {
+  width: 200px;
+  height: 230px;
+  text-align: center;
+  position: relative;
+}
+
+.circle .num1 {
+  position: absolute;
+  top: 30%;
+  left: 44%;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.circle .num1 span {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.circle .num2 {
+  position: absolute;
+  bottom: 21%;
+  left: 32%;
+  line-height: 20px;
+  font-size: 14px;
+}
+
+.circle .wenhao {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url('../images/sprite1.png');
+  background-position: -250px -2136px;
+  top: 0px;
+  right: 0px;
+}
+
+.detail {
+  overflow: hidden;
+  height: 350px;
+  margin-bottom: 100px;
+}
+
+.detail .head-txt {
+  margin: 20px 30px 0px;
+  overflow: hidden;
+}
+
+.detail .head-txt p {
+  margin-left: 30px;
+}
+
+.detail .head-txt a {
+  display: inline-block;
+  width: 130px;
+  height: 30px;
+  text-align: center;
+  font-size: 18px;
+  border-bottom: 2px solid transparent;
+}
+
+.detail .head-txt a:hover {
+  color: #79b0f1;
+  border-bottom-color: #79b0f1;
+}
+
+/* 水平时间轴 */
+.time-line {
+  margin: 200px 50px 0px;
+  overflow: hidden;
+}
+
+.time-line .lis li {
+  float: left;
+  width: 100px;
+  text-align: center;
+}
+
+.time-line .lis li p {
+  line-height: 30px;
+}
+
+.time-line .lis .dot {
+  display: inline-block;
+  width: 10px;
+  height: 5px;
+  background-color: #3285fa;
+  border-radius: 10px 10px 0px 0px;
+  position: relative;
+}
+
+.time-line .lis .dot::before {
+  content: '';
+  width: 100px;
+  height: 1px;
+  background-color: #ccc;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
+.time-line .lis li:last-child .dot::after {
+  content: '';
+  width: 100px;
+  height: 1px;
+  background-color: #ccc;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}

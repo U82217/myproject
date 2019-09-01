@@ -1,0 +1,372 @@
+.banner {
+  width: 1000px;
+  height: 224px;
+  margin-top: 10px;
+  position: relative;
+  box-shadow: 4px -3px 4px 0px rgba(0, 0, 0, 0.3),
+    4px 3px 4px 0px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.banner .login {
+  width: 228px;
+  height: 100%;
+  background-color: #fff;
+  text-align: center;
+  float: left;
+  position: relative;
+  box-shadow: 4px 0px 3px 0px rgba(0, 0, 0, 0.5);
+}
+
+.login-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -93px;
+  margin-top: -71px;
+  line-height: 30px;
+}
+
+.login-content button {
+  color: #fff;
+  font-size: 18px;
+  background-color: #3285fa;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 160px;
+  line-height: 50px;
+}
+
+.login-content p {
+  margin-top: 30px;
+  color: gray;
+}
+
+.banner .b-img {
+  position: relative;
+  width: 762px;
+  float: left;
+  height: 100%;
+  margin-left: 10px;
+  overflow: hidden;
+}
+
+.banner .b-img ul {
+  width: 5000px;
+  position: relative;
+  left: 0px;
+}
+
+.banner .b-img ul li {
+  float: left;
+  /* transition: 1s; */
+}
+
+.banner .b-img ul li img {
+  width: 762px;
+}
+
+.banner .b-img span {
+  position: absolute;
+  width: 40px;
+  height: 70px;
+  background-image: url('../images/sprite.png');
+  top: 50%;
+  margin-top: -35px;
+  cursor: pointer;
+}
+
+.banner .b-img .left {
+  left: 20px;
+  background-position:-234px -1865px;
+}
+
+.banner .b-img .right {
+  right: 20px;
+  background-position:-234px -1933px;
+}
+
+.content {
+  width: 100%;
+  height: 400px;
+  margin-top: 10px;
+  background-color: #fff;
+  box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.content a {
+  color: gray;
+  font-size: 16px;
+}
+
+.content a:hover {
+  text-decoration: underline;
+  color: #f40;
+}
+
+.content .learn-more {
+  float: right;
+  margin: 10px 20px;
+}
+
+.content-wrap {
+  width: 900px;
+  margin: 20px auto;
+}
+
+.content-wrap1 {
+  margin-top: 50px;
+}
+
+.content-wrap .left {
+  width: 400px;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+
+.content-wrap .left::after {
+  content: '';
+  width: 1px;
+  height: 310px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: #ccc;
+}
+
+.content-wrap .left .logo img {
+  float: left;
+  margin-right: 20px;
+}
+
+.content-wrap .left .lis {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.content-wrap .left .lis li {
+  float: left;
+  margin: 20px;
+}
+
+.left .lis li .img {
+  float: left;
+  width: 30px;
+  height: 25px;
+  margin-right: 10px;
+  margin-top: -4px;
+}
+
+.pptv .left .lis li .img {
+  background-image: url('../images/pptv_bg.png');
+}
+
+.pptv .left .lis li:nth-child(1) .img {
+  background-position: 0px 0px;
+}
+
+.pptv .left .lis li:nth-child(2) .img {
+  background-position: -146px 0px;
+}
+
+.pptv .left .lis li:nth-child(3) .img {
+  background-position: 0px -56px;
+}
+
+.pptv .left .lis li:nth-child(4) .img {
+  background-position: -146px -56px;
+}
+
+.pptv .left .lis li:nth-child(5) .img {
+  background-position: 0px -116px;
+}
+
+.content-wrap .right {
+  float: right;
+}
+
+.content-wrap .right li {
+  width: 190px;
+  float: left;
+  margin: 0px 10px;
+  height: 250px;
+  background: url('../images/prize.png');
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.content-wrap .right img {
+  width: 153px;
+  margin-left: 19px;
+}
+
+.content-wrap .right p {
+  font-weight: bold;
+  line-height: 50px;
+  font-size: 30px;
+  position: absolute;
+  left: 10px;
+}
+
+.content-wrap .right span {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+/* 爱奇艺 */
+.content-wrap .left .iqy-lis {
+  margin-top: 50px;
+  margin-left: 100px;
+}
+
+.content-wrap .left .iqy-lis li {
+  margin: 30px;
+}
+
+.iqy .left .iqy-lis li .img {
+  float: left;
+  width: 30px;
+  height: 22px;
+  margin-right: 10px;
+  margin-top: -2px;
+  background-image: url('../images/iqy_bg.png');
+}
+
+.iqy .left .iqy-lis li:nth-child(1) .img {
+  background-position: 0px 0px;
+}
+
+.iqy .left .iqy-lis li:nth-child(2) .img {
+  background-position: 0px -44px;
+}
+
+.iqy .left .iqy-lis li:nth-child(3) .img {
+  background-position: 0px -90px;
+}
+
+.iqy .left .iqy-lis li:nth-child(4) .img {
+  background-position: 0px -138px;
+}
+
+/* 百度云 */
+.bdc .left .lis li .img {
+  background-image: url('../images/bdy_bg.png');
+  margin-top: 0px;
+}
+
+.bdc .left .lis li {
+  margin: 15px 20px;
+}
+
+.bdc .left .lis li:nth-child(1) .img {
+  background-position: 0px 0px;
+}
+
+.bdc .left .lis li:nth-child(2) .img {
+  background-position: -108px 0px;
+}
+
+.bdc .left .lis li:nth-child(3) .img {
+  background-position: 0px -45px;
+}
+
+.bdc .left .lis li:nth-child(4) .img {
+  background-position: -108px -45px;
+}
+
+.bdc .left .lis li:nth-child(5) .img {
+  background-position: 0px -90px;
+}
+
+.bdc .left .lis li:nth-child(6) .img {
+  background-position: -108px -90px;
+}
+
+.bdc .left .lis li:nth-child(7) .img {
+  background-position: 0px -135px;
+}
+
+.bdc .left .lis li:nth-child(8) .img {
+  background-position: -108px -135px;
+}
+
+.bdc .left .lis li:nth-child(9) .img {
+  background-position: 0px -182px;
+}
+
+.bdc .left .lis li:nth-child(10) .img {
+  background-position: -108px -182px;
+}
+
+.bdc .left .lis li:nth-child(2),
+.bdc .left .lis li:nth-child(6) {
+  margin-left: 5px;
+}
+
+.bdc .left .lis li:nth-child(8) {
+  margin-left: 36px;
+}
+
+.bdc .right {
+  width: 190px;
+  float: left;
+  margin: 0px 90px;
+  height: 250px;
+  background: url('../images/prize.png');
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.content-wrap .right li {
+  width: 190px;
+  float: left;
+  margin: 0px 10px;
+  height: 250px;
+  background: url('../images/prize.png');
+  background-size: 100% 100%;
+  position: relative;
+}
+
+/* 百度文库 */
+.txt {
+  margin-bottom: 100px;
+}
+
+.txt .left .lis li .img {
+  background-image: url('../images/txt_bg.png');
+  margin-top: -2px;
+}
+
+.txt .left .lis li:nth-child(1) .img {
+  background-position: 0px 0px;
+}
+
+.txt .left .lis li:nth-child(2) .img {
+  background-position: -108px 0px;
+}
+
+.txt .left .lis li:nth-child(3) .img {
+  background-position: 0px -45px;
+}
+
+.txt .left .lis li:nth-child(4) .img {
+  background-position: -108px -45px;
+}
+
+.txt .left .lis li:nth-child(5) .img {
+  background-position: 0px -90px;
+}
+
+.txt .left .lis li:nth-child(6) .img {
+  background-position: -108px -90px;
+}
+
+.txt .left .lis li:nth-child(7) .img {
+  background-position: 0px -138px;
+}
+
+.txt .left .lis li:nth-child(8) .img {
+  background-position: -108px -138px;
+}

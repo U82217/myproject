@@ -1,0 +1,668 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: #333;
+}
+
+body {
+  color: #333;
+  font-size: 14px;
+  font-family: '微软雅黑';
+  overflow: hidden;
+}
+
+html, body, section {
+  width: 100%;
+  height: 100%;
+}
+
+/* section部分 */
+.section {
+  position: relative;
+  top: 0px;
+}
+
+.section>div {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.section>div .title {
+  position: absolute;
+  width: 100%;
+  top: 40%;
+  left: 0px;
+  text-align: center;
+  z-index: 1;
+}
+
+.section>div .title span:nth-child(1) {
+  background-image: url('../images/logo-text.png');
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  background-position: right center;
+}
+
+.section>div .title p {
+  width: 300px;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  transition: 1s;
+}
+
+.section>div .title img,
+.section>div .title span {
+  transition: 1s;
+}
+
+.section>div .t-rotate span:nth-child(1) {
+  margin-right: -1200px;
+}
+
+.section>div .t-rotate span:nth-child(2) img {
+  transform: rotate(180deg);
+}
+
+.section>div .t-rotate p {
+  transform: scale(0.1);
+  opacity: 0.1;
+}
+
+.screen1 {
+  background-image: url('../images/bg01.jpg');
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.text-logo {
+  width: 150px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -75px;
+}
+
+.screen1 img.ball {
+  animation: ball 5s linear infinite;
+  margin-top: -280px;
+}
+
+@keyframes ball {
+  0% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(-80px);
+  }
+}
+
+.screen1 img.cloud {
+  width: 150px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  animation: cloud 50s linear;
+}
+
+.screen1 img.scloud {
+  width: 150px;
+  position: absolute;
+  top: 150px;
+  right: 20%;
+  animation: scloud 50s linear;
+}
+
+@keyframes cloud {
+  0% {
+    right: 0px;
+  }
+
+  100% {
+    right: 100%;
+  }
+}
+
+@keyframes scloud {
+  0% {
+    right: 20%;
+  }
+
+  100% {
+    right: 100%;
+  }
+}
+
+.screen2 {
+  background-image: url('../images/bg02.jpg');
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.screen2 .s2-img {
+  width: 160px;
+  height: 180px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -300px;
+  margin-left: -80px;
+}
+
+.screen2 .compass {
+  width: 100%;
+  height: 100%;
+}
+
+.screen2 .compass-pointer {
+  width: 120px;
+  height: 110px;
+  position: absolute;
+  top: 24px;
+  left: 50%;
+  margin-left: -60px;
+  animation: pointer 2s linear infinite;
+}
+
+@keyframes pointer {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.screen2>img {
+  position: absolute;
+  right: 25%;
+  animation: fire-ball 50s linear infinite;
+}
+
+@keyframes fire-ball {
+  0% {
+    top: 0px;
+  }
+
+  100% {
+    top: 100%;
+  }
+}
+
+.screen3 {
+  background-image: url('../images/bg03.jpg');
+  background-size: 100% 100%;
+}
+
+.screen3 .s3-img {
+  width: 200px;
+  height: 240px;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  margin-left: -100px;
+  animation: s3-circle3 40s linear infinite;
+}
+
+.s3-img ul {
+  position: absolute;
+  top: 0px;
+  z-index: 1;
+}
+
+.s3-img ul li {
+  float: left;
+  margin-left: 20px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7);
+  position: relative;
+}
+
+.s3-img ul li:nth-child(2n-1) {
+  width: 10px;
+  height: 10px;
+  animation: s3-circle1 4s linear infinite;
+}
+
+.s3-img ul li:nth-child(2n) {
+  animation: s3-circle2 10s linear infinite;
+}
+
+@keyframes s3-circle1 {
+  0% {
+    transform: translateY(0px)
+  }
+
+  100% {
+    transform: translateY(-120px)
+  }
+}
+
+@keyframes s3-circle2 {
+  0% {
+    transform: translateY(0px)
+  }
+
+  100% {
+    transform: translateY(-200px)
+  }
+}
+
+@keyframes s3-circle3 {
+  0% {
+    transform: translateY(0px)
+  }
+
+  100% {
+    transform: translateY(-500px)
+  }
+}
+
+.screen4 {
+  background-image: url('../images/bg04.jpg');
+  background-size: 100% 100%;
+}
+
+.screen4>img {
+  margin-top: -300px;
+  animation: s4-circle 8s linear infinite;
+}
+
+@keyframes s4-circle {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(25deg);
+  }
+
+  100% {
+    transform: rotate(0deg)
+  }
+}
+
+.screen5 {
+  background-image: url('../images/bg05.jpg');
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.screen5 .s5-img1 {
+  margin-top: -250px;
+  transform: scale(0.1);
+  animation: s5-circle1 3s linear infinite;
+}
+
+.screen5 .s5-img2 {
+  position: absolute;
+  width: 80px;
+  bottom: 240px;
+  right: 220px;
+  animation: s5-circle2 8s linear infinite;
+}
+
+.screen5 .s5-img3 {
+  width: 120px;
+  position: absolute;
+  bottom: 70px;
+  right: 350px;
+  animation: s5-circle2 10s linear infinite;
+}
+
+@keyframes s5-circle1 {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(2);
+  }
+}
+
+@keyframes s5-circle2 {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-50px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.screen6 {
+  background-image: url('../images/bg06.jpg');
+  background-size: 100% 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.screen6 .s6-img {
+  margin-top: -280px;
+  animation: s6-circle1 8s linear infinite;
+}
+
+@keyframes s6-circle1 {
+  0% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(70px);
+  }
+}
+
+.screen6 .lis {
+  width: 800px;
+  height: 100%;
+  margin: 0px auto;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.lis-ul li:nth-child(2n) {
+  width: 2px;
+  height: 2px;
+  background-color: #fff;
+  float: left;
+  margin: 20px;
+  border-radius: 50%;
+  animation: s6-circle2 100s linear infinite;
+}
+
+.lis-ul li:nth-child(2n+1) {
+  width: 1px;
+  height: 1px;
+  margin: 40px;
+  background-color: #fff;
+  float: left;
+  border-radius: 50%;
+  animation: s6-circle2 10s linear infinite;
+}
+
+@keyframes s6-circle2 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+
+  100% {
+    transform: translate(20px, 800px);
+  }
+}
+
+.screen7 {
+  background-image: url('../images/bg07.jpg');
+  background-size: 100% 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.screen7 .s7-img {
+  margin-top: -280px;
+  background-image: url('../images/black-hole-light.png');
+  background-position: center;
+  background-size: 160px 160px;
+  background-repeat: no-repeat;
+  animation: s7-circle 4s linear infinite;
+}
+
+@keyframes s7-circle {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.screen7 .dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 4px;
+  background-color: #fff;
+  position: absolute;
+}
+
+.dot1 {
+  top: 0px;
+  left: -10px;
+  animation: s7-circle1 1s linear infinite;
+}
+
+.dot2 {
+  top: 0px;
+  right: -10px;
+  animation: s7-circle2 3s linear infinite;
+}
+
+.dot3 {
+  bottom: -5px;
+  left: -10px;
+  animation: s7-circle3 1s linear infinite;
+}
+
+.dot4 {
+  bottom: -5px;
+  right: -10px;
+  animation: s7-circle4 2s linear infinite;
+}
+
+.dot5 {
+  top: 50%;
+  left: -10px;
+  animation: s7-circle5 2s linear infinite;
+}
+
+@keyframes s7-circle1 {
+  0% {
+     top: 0px;
+     left: -10px;
+  }
+
+  100% {
+     top: 22%;
+     left: 46%;
+  }
+}
+
+@keyframes s7-circle2 {
+  0% {
+     top: 0px;
+     right: -10px;
+  }
+
+  100% {
+     top: 22%;
+     right: 46%;
+  }
+}
+
+@keyframes s7-circle3 {
+  0% {
+    bottom: -5px;
+    left: -10px;
+  }
+
+  100% {
+    bottom: 68%;
+    left: 46%;
+  }
+}
+
+@keyframes s7-circle4 {
+  0% {
+    bottom: -5px;
+    right: -10px;
+  }
+
+  100% {
+    bottom: 68%;
+    right: 46%;
+  }
+}
+
+@keyframes s7-circle5 {
+  0% {
+    top: 50%;
+    left: -10px;
+  }
+
+  100% {
+    top: 24%;
+    left: 46%;
+  }
+}
+
+/* 固定部分 */
+.logo, .music, .aside, .nav, .down {
+  position: fixed;
+}
+
+.logo {
+  top: 10px;
+  left: 10px;
+}
+
+.music {
+  top: 10px;
+  right: 20px;
+  width: 40px;
+  animation: play 4s linear infinite;
+}
+
+@keyframes play {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.play {
+  animation-play-state: running;
+}
+
+.pause {
+  animation-play-state: paused;
+}
+
+.aside {
+  top: 50%;
+  margin-top: -117px;
+  right: 10px;
+  z-index: 1;
+}
+
+.aside li {
+  width: 20px;
+  height: 20px;
+  border: 1px solid red;
+  border-radius: 50%;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.aside li.current {
+  background-image: url('../images/side_bg.png');
+  background-size: 100% 100%;
+  width: 40px;
+  height: 40px;
+  margin-left: 0px;
+  border: none;
+  animation: circle 4s linear infinite;
+}
+
+@keyframes circle {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.nav {
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5)
+}
+
+.nav ul {
+  width: 1000px;
+  margin: 0px auto;
+}
+
+.nav li a {
+  float: left;
+  width: 200px;
+  height: 50px;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  transition: 1s;
+}
+
+.nav li:nth-child(1) a:hover {
+  background-color: #d9534f;
+}
+
+.nav li:nth-child(2) a:hover {
+  background-color: #6fd972;
+}
+
+.nav li:nth-child(3) a:hover {
+  background-color: orange;
+}
+
+.nav li:nth-child(4) a:hover {
+  background-color: #acacff;
+}
+
+.nav li:nth-child(5) a:hover {
+  background-color: #ffd2d2;
+}
+
+.down {
+  bottom: 50%;
+  left: 50%;
+  margin-left: -153px;
+  margin-bottom: -200px;
+  color: #fff;
+}
+
+.down ul {
+  width: 260px;
+}
+
+.down ul li {
+  float: left;
+  margin-left: 20px;
+}
+
+.down ul li span {
+  margin-left: 10px;
+}
